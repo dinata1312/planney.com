@@ -44,6 +44,9 @@ body {
   color: black;
 }
 
+.navbar-right {
+  float: right;
+}
 /* END INI BUAT NAVIGATION BAR */
 
 /* INI BUAT GAMBAR DIATAS/DIBAWAHNYA NAVBAR */
@@ -54,14 +57,12 @@ body {
   height: 400px;
 }
 
- /* Container holding the image and the text */
  .image-container {
   position: relative;
   text-align: right;
   color: white;
 }
 
-/* Centered text */
 .image-text {
   position: absolute;
   text-align: right;
@@ -157,6 +158,22 @@ img {
 .made_by{
   font-weight: 400;
   font-size: 13px;
-  margin-top: 35px;
   text-align: center;
+  margin-bottom: -10px;
+}
+
+.footer {
+  padding: 15px;
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: gray;
+  color: white;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: right;
 }
