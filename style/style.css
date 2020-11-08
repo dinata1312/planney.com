@@ -86,7 +86,7 @@ body {
     text-align: center;
 }
 
-img {
+.img {
   height: auto;
   max-width: 100%;
   vertical-align: middle;
