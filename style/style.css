@@ -74,7 +74,7 @@ body {
 } 
 /* INI BUAT GAMBAR DIATAS/DIBAWAHNYA NAVBAR */
 
-/* INI BUAT CARD KOTA */
+/* INI BUAT  KOTA */
 .main{
   margin: 0 auto;
   padding: 20px 20px 0 20px;
@@ -265,3 +265,14 @@ body {
   font-size: 10pt;
   margin-bottom: 10px;
   height: 25px;
+}
+
+/*ini buat tabel di biodata*/
+.tanggalplan{
+  background: #a5b1c2;
+  border: 0px;
+  width: 100%;
+  font-size: 16pt;
+  margin: 0px;
+  color: white;
+}
