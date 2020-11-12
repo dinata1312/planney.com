@@ -88,7 +88,6 @@ body {
 
 /* INI BUAT  KOTA */
 .main{
-  margin: 0 auto;
   padding: 20px 20px 0 20px;
 }
 
@@ -339,9 +338,13 @@ body {
 }
 
 .img-tips-container {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
   position: relative;
   text-align: center;
   color: white;
+  margin-right: 20px;
 } 
 
 .img-tips{
