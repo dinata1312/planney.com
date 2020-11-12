@@ -1,0 +1,73 @@
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*{
+    cursor: auto;
+}
+.body-login{
+    color: #272727;
+    font-family: 'Quicksand', serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    background: url('../img/bali.jpg') no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.wrapper-left{
+    background:rgba(0,0,0,0.8);
+    backdrop-filter: blur(5px);
+    color: white;
+    padding: 20px;
+}
+
+.wrapper-left .left h1{
+    font-size: 60pt;
+}
+
+.container-login{
+    padding-top: 70px;
+    padding-bottom: 80px;
+    align-content: center;
+}
+
+.login{
+    width: 320px;
+    height: 420px;
+    background-color: rgb(180, 180, 180);
+    color: #fff;
+    box-sizing: border-box;
+    border-radius: 3%;
+}
+
+.login h1{
+    font-size: 20pt;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.login form input[type=text], input[type=password], input[type=submit]{
+    width: 90%;
+    padding: 10px 5px;
+    margin: 8px 15px;
+    border: 2px solid gray;
+    border-radius: 4px;
+}
+
+.login a button{
+    width: 90%;
+    padding: 10px 5px;
+    margin: 8px 15px;
+    border: 2px solid gray;
+    background-color: #20BF6B;
+    border-radius: 4px;
+    cursor: pointer;
+}

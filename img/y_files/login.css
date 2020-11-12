@@ -1,0 +1,43 @@
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.body-login{
+    color: #272727;
+    font-family: 'Quicksand', serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    background: url('../img/itzy.webp') no-repeat;
+    background-size: cover;
+    pointer-events: none;
+    object-fit: cover;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container-login{
+    padding-top: 70px;
+    padding-bottom: 80px;
+    margin: 0 auto;
+    align-content: center;
+}
+
+.login{
+    width: 320px;
+    height: 420px;
+    background-color: #0540c0;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.login h1{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}

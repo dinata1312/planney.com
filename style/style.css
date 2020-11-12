@@ -12,6 +12,7 @@ body {
   font-weight: 400;
   letter-spacing: 0;
   margin: 0;
+  padding: 0;
 }
 
 .container{
@@ -133,6 +134,7 @@ body {
   display: flex;
   padding: 1rem;
 }
+
 .card-big{
   width: 60%;
   /* Add shadows to create the "card" effect */
@@ -182,7 +184,7 @@ body {
   background-color: #20BF6B;
 }
 
-.btn-cardd{
+.btn-card{
   color: #ffffff;
   margin: 0 -14px;
   padding: 0.8rem;
@@ -258,7 +260,7 @@ body {
 .wrapper-left {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  justify-items: left;
+  justify-items: center;
 }
 
 /* ini buat formnya add to*/
