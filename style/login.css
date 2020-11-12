@@ -40,7 +40,6 @@
 
 .login{
     width: 320px;
-    height: 420px;
     background-color: rgb(180, 180, 180);
     color: #fff;
     box-sizing: border-box;
@@ -54,7 +53,7 @@
     text-align: center;
 }
 
-.login form input[type=text], input[type=password], input[type=submit]{
+.login form input[type=text], input[type=password], input[type=submit], input[type=date], input[type=email]{
     width: 90%;
     padding: 10px 5px;
     margin: 8px 15px;
