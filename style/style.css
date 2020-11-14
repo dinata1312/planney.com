@@ -371,3 +371,13 @@ body {
   flex-direction: column;
   overflow: hidden;
 } */
+
+.card_titleakun {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+  text-align: center;
+}
