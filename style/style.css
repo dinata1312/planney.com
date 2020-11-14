@@ -218,6 +218,7 @@ body {
 .card .card_content {
   padding: 1rem;
   background: linear-gradient(to bottom left, #2098DA 40%, #0540c0 100%);
+  color: white;
 }
 
 .card .card_title {
