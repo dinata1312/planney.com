@@ -37,7 +37,7 @@
     <div class="main">
         <div class="container">
         <div class="wrapper-left" style="padding-left: 50px;">
-                <div>
+            <div>
                 <h2 style="text-align:left">Kota Semarang</h2>
                 <p>Kota Semarang memiliki beberapa julukan salah satunya yaitu Venetië van Java. Alasan dijuluki nama
                     ini karena Semarang dilalui banyak sungai di tengah kota seperti di Venesia (Italia), sehingga Belanda
@@ -138,6 +138,15 @@
                 </form>
             </div>
         </div>
+
+        <div class="container" style="margin-bottom: 20px;">
+            <div class="main">
+                <button class="accordion" id="faq[0]">Apakah makanannya enak?</button>
+                <div class="panel">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, alias pariatur amet aperiam vitae error odio. Magni eveniet numquam quibusdam molestias aliquam, nihil nemo quisquam laboriosam tempora, hic a quos!</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="footer">
@@ -153,6 +162,31 @@
             <p>Made with ♡</p>
           </div>
         </div>
-      </div>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+
+        
+        // $(document).ready(function(){
+        //     $(getElementsByClassName("accordion")).click(function(){
+        //         $(getElementsByClassName("panel")).toggle();
+        //     });
+        // });
+
+    </script>
 </body>
 </html>

@@ -182,7 +182,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.2);
   background-color: #20BF6B;
 }
-
+/* 
 .btn-card{
   color: #ffffff;
   margin: 0 -14px;
@@ -196,7 +196,7 @@ body {
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background-color: #EB3B5A;
-}
+} */
 
 
 /* Add rounded corners to the top left and the top right corner of the image */
@@ -205,15 +205,6 @@ body {
   width: 250px;
   height: 150px;
 }
-
-/* .card {
-  background-color: white;
-  border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-} */
 
 .card .card_content {
   padding: 1rem;
@@ -236,6 +227,16 @@ body {
   margin-bottom: 1.25rem;    
   font-weight: 400;
   width: 200px;
+}
+
+.card_titleakun {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+  text-align: center;
 }
 /* END INI BUAT CARD */
 
@@ -356,28 +357,52 @@ body {
   margin: 0;
 }
 
-/* Add rounded corners to the top left and the top right corner of the image */
-.card img {
-  border-radius: 5px 5px 0 0;
-  width: 250px;
-  height: 150px;
+.faq {
+  display: block;
+  grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr) );
+  margin: 0 0 0 -20px;
 }
 
-/* .card {
-  background-color: white;
-  border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-direction: column;
+/* FAQ CSS */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\02795'; /* LAMBANG + */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* LAMBANG - */
+}
+
+/* BUAT KETERANGAN */
+.panel {
+  display: block;
+  background-color: #ddd;
+  max-height: 0;
   overflow: hidden;
-} */
-
-.card_titleakun {
-  color: #ffffff;
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: capitalize;
-  margin: 0px;
-  text-align: center;
+  /* transition: max-height 0.2s ease-out; */
 }
+
+.panel p{
+  padding: 10px;
+}
+
+/* END FAQ CSS */
