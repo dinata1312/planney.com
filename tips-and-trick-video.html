@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planney.com</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+        .videoWrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0px;
+            margin: 0;
+        }
+        .videoWrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 90% !important;
+            height: 90% !important;
+            margin: 0;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body style="padding-top: 45px;">
+    <!-- Navigation -->
+    <div class="navbar">
+        <a href="index.html"><h4 style="margin: 0; cursor: pointer;">PLANNEY.com</h4></a>
+        <input type="text" name="search" id="search" style="margin:12px" placeholder="Find your destination">
+        <div class="navbar-right">
+          <a href="index.html">Home</a>
+          <a href="wishlistcity.html">Wishlist</a>
+          <a href="tipsntrick.html">Tips & Trick</a>
+          <a href="biodata.html">Account</a>
+        </div>
+    </div> 
+    <!-- End Navigation -->
+
+    <!-- Image Header -->
+    <div class="image-container">
+        <img src="img/bali-2.jpg" alt="welcome-image" class="img-fit" style="padding-top: -20px">
+        <div class="image-text" style="text-align: center; width: 100%;">
+            <h1 style="font-size: 50pt; margin-bottom: 0;">Tips & Trick</h1>
+            <h3>Bali Travel Tips</h3>
+        </div>
+    </div>
+
+    <!-- End Image Header -->
+
+    <div class="main">
+
+        <div class="container">
+            <div class="main">
+                <div class="videoWrapper">
+                    <iframe src="https://www.youtube.com/embed/NfmQpueBjXI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-bottom: 20px; margin-top: 0px;">
+            <div class="main">
+              <p>
+                Coming to Bali for the first time? Here are 10 things I WISH I knew before I moved to Bali!<br>
+                <br>
+                10 things you need to know before coming to Bali: <br>
+                <ul>
+                  <li>Be aware of the monkeys!</li>
+                  <li>Don't forget to take your card after withdrawing cash at ATM!</li>
+                  <li>Use rideshare apps to get around.</li>
+                  <li>Connect with a driver to chauffeur you around the island. </li>
+                  <li>Avoid “Bali Belly” with charcoal tablets ➤ https://amzn.to/3dmCBma </li>
+                  <li>DON'T drink tap water.</li>
+                  <li>Tipping is optional in Indonesia. </li>
+                  <li>Balinese ceremonies are a daily thing. </li>
+                  <li>You’ve got visa options ➤ https://baliviza.com/ </li>
+                  <li>Airport VIP service is a must ➤ https://www.ticbali.net/ </li>
+                </ul>
+                <br>
+                ▸▸ Bonus Tip: Do a “floating breakfast” while you’re in Bali!<br>
+              </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="wrapper">
+          <p>Situs ini merupakan situs resmi buatan Christian Ardinata dan Karenina Gloria. <br> 
+            Semua isi yang tercantum di dalam situs ini bertujuan untuk memberikan informasi dan bukan
+            sebagai tujuan komersial. Penjualan yang ditampilkan merupakan tanda kemitraan yang akan
+            menghubungkan Anda kepada Mitra Kami. </p>
+          <div>
+            <h3 style="margin: 0;">Hubungi kami</h3>
+            <a href="">Instagram</a> <br>
+            <a href="">E-mail</a>
+            <p>Made with ♡</p>
+          </div>
+        </div>
+    </div>
+
+    <script>
+        
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+
+        
+        // $(document).ready(function(){
+        //     $(getElementsByClassName("accordion")).click(function(){
+        //         $(getElementsByClassName("panel")).toggle();
+        //     });
+        // });
+
+    </script>
+</body>
+</html>
