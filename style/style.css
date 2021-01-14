@@ -184,22 +184,23 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.2);
   background-color: #20BF6B;
 }
-/* 
-.btn-card{
-  color: #ffffff;
-  margin: 0 -14px;
-  padding: 0.8rem;
+
+.btn-wishlist-card{
+  /* color: #ffffff; */
+  /* margin: 2px -14px 2px; */
+  /* padding: 0.3rem; */
   font-size: 14px;
   text-transform: uppercase;
   border-radius: 4px;
   font-weight: 400;
-  display: block;
-  width: 245px;
+  /* display: block; */
+  width: 40px;
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  background-color: #EB3B5A;
-} */
-
+  /* background-color: #0083cf; */
+  background-color: #ffffff;
+  color: #0083cf;
+}
 
 /* Add rounded corners to the top left and the top right corner of the image */
 .card img {

@@ -48,7 +48,10 @@
                     <div class="card">
                         <img src="img/semarang/jembatan-harapan.jpg" alt="img">
                         <div class="card-container">
-                            <h4><b>Jembatan Harapan</b></h4>
+                            <h4>
+                                <b>Jembatan Harapan</b>
+                                <button class="btn-wishlist-card" onclick="wishButton()" id="wishButton"><i class="fa fa-star-o" aria-hidden="true"></i></button>
+                            </h4>
                             <p>Perlu Anda ketahui bahwa memiliki
                                 nama Jembatan Harapan bukan
                                 berarti tempat tersebut dapat 
@@ -56,7 +59,7 @@
                             <p style="background-color: #ddd; margin: 0 -15px 0 -15px; padding-left: 10px; height: 60px;">
                                 Jl. Puri Anjasmoro, Tawangsari, Kec. Semarang Barat.
                             </p>
-                            <a href="view-tempat.html"><button class="btn-card">ADD TO PLAN</button></a>
+                            <a href="view-tempat.html"><button class="btn-card">Add to plan</button></a>
                         </div>
                     </div> 
                     <div class="card">
@@ -70,7 +73,7 @@
                             <p style="background-color: #ddd; margin: 0 -15px 0 -15px; padding-left: 10px; height: 60px;">
                                 Sokowolu, Tajuk, Getasan, Semarang.
                             </p>
-                            <a href="view-tempat.html"><button class="btn-card">ADD TO PLAN</button></a>
+                            <a href="view-tempat.html"><button class="btn-card">Add to plan</button></a>
                         </div>
                     </div> 
                     <div class="card">
@@ -84,7 +87,7 @@
                             <p style="background-color: #ddd; margin: 0 -15px 0 -15px; padding-left: 10px; height: 60px;">
                                 Jl. Puri Anjasmoro, Tawangsari, Kec. Semarang Barat.
                             </p>
-                            <a href="view-tempat.html"><button class="btn-card">ADD TO PLAN</button></a>
+                            <a href="view-tempat.html"><button class="btn-card">Add to plan</button></a>
                         </div>
                     </div> 
                     <div class="card">
@@ -98,7 +101,7 @@
                             <p style="background-color: #ddd; margin: 0 -15px 0 -15px; padding-left: 10px; height: 60px;">
                                 Jl. Mgr. Sugiyopranoto, Panjang Lor, Panjang, Kec. Ambarawa.
                             </p>
-                            <a href="view-tempat.html"><button class="btn-card">ADD TO PLAN</button></a>
+                            <a href="view-tempat.html"><button class="btn-card">Add to plan</button></a>
                         </div>
                     </div> 
                 </div>
@@ -175,8 +178,10 @@
           </div>
         </div>
     </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script>
         
+        // FAQ
         var acc = document.getElementsByClassName("accordion");
         var i;
         
@@ -192,7 +197,17 @@
           });
         }
 
-
+        // Wishlist
+        function wishButton() {
+            var x = document.getElementById("wishButton");
+            if (x.style.backgroundColor === "#0083cf") {
+                x.style.backgroundColor = "#ffffff";
+                x.style.color = "#0083cf";
+            } else {
+                x.style.backgroundColor = "#0083cf";
+                x.style.color = "#ffffff";
+            }
+        }
     </script>
 </body>
 </html>
