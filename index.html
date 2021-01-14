@@ -6,6 +6,8 @@
     <title>Planney.com</title>
     <!-- CSS -->
     <link rel="stylesheet" href="style/style.css">
+    <!-- ICON LIBRARY  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body style="padding-top: 45px;">
     <!-- Navigation -->
@@ -88,11 +90,27 @@
             menghubungkan Anda kepada Mitra Kami. </p>
           <div>
             <h3 style="margin: 0;">Hubungi kami</h3>
-            <a href="">Instagram</a> <br>
-            <a href="">E-mail</a>
+            <a href="#" class="fa fa-instagram"></a> &nbsp; | &nbsp;
+            <a href="#" class="fa fa-google"></a>
             <p>Made with ♡</p>
           </div>
         </div>
-      </div>
+    </div>
+      <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+      </script>
 </body>
 </html>

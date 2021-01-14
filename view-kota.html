@@ -6,6 +6,8 @@
     <title>Planney.com</title>
     <!-- CSS -->
     <link rel="stylesheet" href="style/style.css">
+    <!-- ICON LIBRARY  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body style="padding-top: 45px;">
     <!-- Navigation -->
@@ -103,7 +105,15 @@
             </div>
         </div>
         </div>
-
+        <div class="container" style="margin-bottom: 20px;">
+            <div class="main">
+                <h1>FREQUENTLY ASKED QUESTION</h1>
+                <button class="accordion" id="faq[0]">Apakah makanannya enak?</button>
+                <div class="panel">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, alias pariatur amet aperiam vitae error odio. Magni eveniet numquam quibusdam molestias aliquam, nihil nemo quisquam laboriosam tempora, hic a quos!</p>
+                </div>
+            </div>
+        </div>
         <div class="container" style="margin-bottom: 20px;">
             <div class="main">
                 <hr>
@@ -138,15 +148,6 @@
                 </form>
             </div>
         </div>
-
-        <div class="container" style="margin-bottom: 20px;">
-            <div class="main">
-                <button class="accordion" id="faq[0]">Apakah makanannya enak?</button>
-                <div class="panel">
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, alias pariatur amet aperiam vitae error odio. Magni eveniet numquam quibusdam molestias aliquam, nihil nemo quisquam laboriosam tempora, hic a quos!</p>
-                </div>
-            </div>
-        </div>
     </div>
 
     <div class="footer">
@@ -157,13 +158,12 @@
             menghubungkan Anda kepada Mitra Kami. </p>
           <div>
             <h3 style="margin: 0;">Hubungi kami</h3>
-            <a href="">Instagram</a> <br>
-            <a href="">E-mail</a>
+            <a href="#" class="fa fa-instagram"></a> &nbsp; | &nbsp;
+            <a href="#" class="fa fa-google"></a>
             <p>Made with ♡</p>
           </div>
         </div>
     </div>
-
     <script>
         
         var acc = document.getElementsByClassName("accordion");
@@ -181,12 +181,6 @@
           });
         }
 
-        
-        // $(document).ready(function(){
-        //     $(getElementsByClassName("accordion")).click(function(){
-        //         $(getElementsByClassName("panel")).toggle();
-        //     });
-        // });
 
     </script>
 </body>
