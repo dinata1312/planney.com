@@ -184,6 +184,7 @@
           </div>
         </div>
     </div>
+
     <script src="js/jquery-3.5.1.min.js"></script>
     <script>
         
@@ -207,14 +208,17 @@
         function wishButton(n) {
 
             var x = document.getElementById("wishButton[" + n +"]");
+            
             if (x.style.backgroundColor === "#0083cf") {
                 x.style.backgroundColor = "#ffffff";
                 x.style.color = "#0083cf";
+                $("#wishButton[" + n +"]").find('i').toggleClass('fa fa-star');
             } else {
                 x.style.backgroundColor = "#0083cf";
                 x.style.color = "#ffffff";
             }
         }
     </script>
+    
 </body>
 </html>
